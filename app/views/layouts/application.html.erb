@@ -8,8 +8,89 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-  </head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Questrial&display=swap" rel="stylesheet">
 
+    <style>
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(105deg, #c359b3, #d07ac8, #de99dc, #ebb7ee, #f9d5ff); /* made at https://learnui.design/tools/gradient-generator.html */
+        color: rgba(255, 255, 255, 1.0);
+        a {
+          color: rgba(255, 255, 255, 1.0);
+          text-decoration: none;
+        }
+        font-family: "Alegreya";
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .avatar-image {
+        width: 156px;
+        height: 156px;
+        object-fit: cover;
+        border-radius: 156px;
+      }
+
+      .image-row {
+        margin-bottom: 30px;
+        text-align: center;
+        }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Questrial";
+        font-size: 36px;
+        font-weight: 900;
+      }
+
+      .thumbnail {
+        width: 72px;
+        height: 72px;
+        border-radius: 72px;
+        object-fit: cover;
+      }
+
+      .item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(149, 123, 123, 0.5);
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122, 32, 122, 0, 0.5);
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  
   <body>
     <%= yield %>
   </body>
